@@ -1,4 +1,4 @@
 from giextractor import GoogleImageExtractor
 
 imageExtractor = GoogleImageExtractor()
-imageExtractor.extract_images(imageQuery='car', imageCount=150)
+imageExtractor.extract_images(imageQuery='person', imageCount=130)

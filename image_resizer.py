@@ -3,14 +3,14 @@ import os
 from PIL import Image
 
 def resize(filepath):
-    basewidth = 640
+    basewidth = 500
     img = Image.open(filepath)
     wpercent = (basewidth / float(img.size[0]))
     hsize = int((float(img.size[1]) * float(wpercent)))
     img = img.resize((basewidth, hsize), PIL.Image.ANTIALIAS)
     img.save('resized_image.jpg')
 
-    baseheight = 480
+    baseheight = 500
     img = Image.open('resized_image.jpg')
     hpercent = (baseheight / float(img.size[1]))
     wsize = int((float(img.size[0]) * float(hpercent)))
