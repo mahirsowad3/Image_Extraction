@@ -25,5 +25,5 @@ def change_files(directory):
             os.remove(abs_filename)
 
 
-training_dir = os.getcwd() + '\car'
+training_dir = os.getcwd() + '\\table'
 change_files(training_dir)
